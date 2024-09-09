@@ -31,7 +31,7 @@
             </header>
         @endisset
   @if(session('success'))
-            <div class="flex justify-center">
+            <div class="flex justify-center alertbox">
                 <div class="bg-red-600 text-white rounded-lg shadow-lg  mx-4">
                 {{session('success')}}
                 </div>

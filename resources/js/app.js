@@ -11,6 +11,7 @@ window.Alpine = Alpine;
 Alpine.start();
 
 document.addEventListener("DOMContentLoaded",()=>{
+    const alertbox= document.querySelector(".alertbox");
  // Function to show the modal with the emergency message
  function showModal(message) {
     document.getElementById('emergencyMessage').innerText = message;
@@ -25,4 +26,9 @@ setTimeout(() => {
     })
 }, 200);
 
+setTimeout(()=>{
+if(alertbox){
+    alertbox.style.display="none";
+}
+},4000)
 })
